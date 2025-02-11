@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Gallagher;
-    src: url(font/Gallagher-Shadow.ttf);
+    font-family: Magistriens;
+    src: url(font/Magistriens-Regular.ttf);
 }
 
 *{
@@ -149,6 +149,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+footer .secret{
+    font-family: Magistriens;
 }
 
 .cardcontainer{
