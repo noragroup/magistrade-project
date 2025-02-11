@@ -1,0 +1,333 @@
+@font-face {
+    font-family: Piston;
+    src: url(font/Piston\ Pressure.otf);
+}
+
+@font-face {
+    font-family: Gallagher;
+    src: url(font/Gallagher-Shadow.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040a79;
+}
+
+.title img{
+    background-color: #ffffff50;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+header {
+    background-color: #0a0a0a;
+    background-position: center;
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: auto;
+    height: 300px;
+}
+
+h2 {
+    color: #fff;
+}
+
+.navigation nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navigation nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.7s ease;
+}
+
+.navigation nav a:hover {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #0a0a0a, #040a79);
+}
+
+.about {
+    background-color: #040a79;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #040a79, #444);
+}
+
+.project {
+    width: auto;
+    color: #fff;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    background-color: #0a0a0a;
+    background-image: url(img/project-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+    border-radius: 0px;
+}
+
+.project a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.project a:hover{
+    color: #047b90;
+}
+
+.project a:active{
+    color: #ff0000;
+}
+
+.contact {
+    background-color: #444;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact .socials a{
+    cursor: pointer;
+}
+
+.contact .socials button{
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #040a79;
+}
+
+.cardbody{
+    background: linear-gradient(to right bottom, #9d10df, #10cec4);
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 500px;
+}
+
+.cardbody h1{
+    color: #fff;
+    text-align: center;
+    font-family: Piston;
+    font-size: 3em;
+    font-weight: 1;
+}
+
+.cardbody p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cardbody2{
+    background: linear-gradient(to right bottom, #1014df, #10ce30);
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.cardbody2 h1{
+    color: #fff;
+    text-align: center;
+    font-family: Piston;
+    font-size: 3em;
+    font-weight: 1;
+}
+
+.cardbody2 p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cardbody2 p a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.member-mobile{
+    display: none;
+}
+
+@media screen and (max-width : 768px){
+    header{
+        background-size: 1000px;
+    }
+    .title img{
+        width: 600px;
+        height: auto;
+    }
+    .member{
+        display: none;
+    }
+    .member-mobile{
+        display: inherit;
+        text-align: center;
+    }
+    .member-mobile .cardcontainer{
+        display: block;
+    }
+    .member-mobile .cardbody{
+        padding: 5px;
+        max-width: none;
+        margin: 20px;
+    }
+    .project {
+        width: auto;
+        color: #fff;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 20px;
+    }
+    .project a{
+        color: #fff;
+        text-decoration: underline;
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width : 426px){
+    header{
+        background-size: 500px;
+        height: 250px;
+    }
+    .title img{
+        width: 300px;
+        height: auto;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        background: linear-gradient(to bottom, #040a79, #444);
+    }
+    .project {
+        width: 300px;
+        color: #fff;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 20px;
+    }
+    .project img {
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .project a{
+        color: #a81010;
+        text-decoration: underline;
+        transition: all 0.5s ease;
+    }
+    .project a:active{
+        color: #047b90;
+    }
+}
+
+@media screen and (max-width : 320px){
+    header{
+        background-size: 350px;
+        height: 150px;
+    }
+    .title img{
+        margin-top: 50px;
+        width: 250px;
+        height: auto;
+    }
+    .member-mobile .cardbody h1{
+        font-size: 2.5em;
+    }
+    .member-mobile .cardbody p{
+        font-size: 1.2em;
+    }
+    .cardbody2 h1{
+        font-size: 2.5em;
+    }
+    .cardbody2 p{
+        font-size: 1.2em;
+    }
+    .project {
+        width: 240px;
+        color: #fff;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 20px;
+    }
+    .project img {
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .project a{
+        color: #a81010;
+        text-decoration: underline;
+        transition: all 0.5s ease;
+    }
+    .project a:active{
+        color: #047b90;
+    }
+}
