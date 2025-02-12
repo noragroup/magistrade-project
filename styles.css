@@ -7,6 +7,10 @@
     font-family: Magistriens;
     src: url(font/Magistriens-Regular.ttf);
 }
+@font-face {
+    font-family: Gallagher;
+    src: url(font/Gallagher-Shadow.ttf);
+}
 
 *{
     text-decoration: none;
@@ -80,6 +84,14 @@ h2 {
     background: linear-gradient(to bottom, #0a0a0a, #040a79);
 }
 
+.hero h2{
+    text-align: center;
+    font-size: 5em;
+    font-family: Gallagher;
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
 .about {
     background-color: #040a79;
     color: #fff;
@@ -87,11 +99,35 @@ h2 {
     text-align: center;
 }
 
+.about h2{
+    text-align: center;
+    font-size: 5em;
+    font-family: Gallagher;
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
+.about p{
+    font-size: 1.5em;
+}
+
+.about .secret{
+    font-family: Magistriens;
+}
+
 .projects-grid {
     display: grid;
     gap: 20px;
     padding: 20px;
     background: linear-gradient(to bottom, #040a79, #444);
+}
+
+.projects-grid h2{
+    text-align: center;
+    font-size: 5em;
+    font-family: Gallagher;
+    font-weight: 1;
+    margin-bottom: 0;
 }
 
 .project {
@@ -294,6 +330,9 @@ footer .secret{
     header{
         background-size: 350px;
         height: 150px;
+    }
+    .hero h2, .about h2, .projects-grid h2{
+        font-size: 3em;
     }
     .title img{
         margin-top: 50px;
